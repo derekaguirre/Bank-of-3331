@@ -1,0 +1,25 @@
+Bank of Miners 					 Date of Request: 10/19/2020 10:22:18
+Name: 	Hulk Hogan
+Date of Birth: 	8/11/1953
+Identification Number: 	104
+Address: 	123_Broville_St,_Augusta,_GA_35522
+Phone Number: 	(012)345-6789
+Checking Account (1103) Balance Prior to Statement Period: 0.0
+Savings Account (2103) Balance Prior to Statement Period: 0.0
+Credit Account (3103) Balance Prior to Statement Period: 0.0
+
+
+  Date:					Action:								Amount:			Balance
+  10/19/2020 10:22:01			Deposited into Checking						$10.0			$110.0
+
+  10/19/2020 10:22:02			Deposited into Savings						$10.0			$30.0
+
+   10/19/2020 10:22:12			Transferred from Checking Account 						$23.0			$87.0
+
+   10/19/2020 10:22:12			Transferred to Savings Account 						$23.0			$53.0
+
+Checking Account (1103) Balance Currently: 87.0
+Savings Account (2103) Balance Currently: 53.0
+Credit Account (3103) Balance Currently: 100.0
+
+

@@ -1,0 +1,19 @@
+Bank of Disney Bank Statement 					 Date of Request: 12/04/2020 04:33:38
+Name: 	1 1
+Date of Birth: 	1
+Identification Number: 	104
+Address: 	1
+Phone Number: 	1
+Checking Account (1103) Balance Prior to Statement Period: 0.0
+Savings Account (2103) Balance Prior to Statement Period: 0.0
+
+
+  Date:					Action:						Amount:						Balance
+  12/04/2020 04:34:52			Deposited into Checking				$10.0						$11.0
+
+  12/04/2020 04:35:05			Deposited into Savings				$100.0						$101.0
+
+Checking Account (1103) Current Balance in Statement Period: 11.0
+Savings Account (2103) Current Balance in Statement Period: 101.0
+
+

@@ -1,0 +1,39 @@
+Bank of Disney Bank Statement 					 Date of Request: 11/23/2020 10:13:53
+Name: 	Derek Aguirre
+Date of Birth: 	"September 3, 1962"
+Identification Number: 	49
+Address: 	"500 W. University Ave, El Paso, TX 79968"
+Phone Number: 	(915) 747-5012
+Checking Account (1048) Balance Prior to Statement Period: 676.64
+Savings Account (2048) Balance Prior to Statement Period: 328.0
+Credit Account (3048) Balance Prior to Statement Period: -399.67
+
+
+  Date:					Action:								Amount:			Balance
+  11/23/2020 10:03:29			Deposited into Checking						$10.0			$686.64
+
+  11/23/2020 10:03:30			Deposited into Savings						$10.0			$338.0
+
+  11/23/2020 10:03:32			Deposited into Credit						$3.0			$-396.67
+
+  11/23/2020 10:03:48			Withdrew from Checking						$15.0			$671.64
+
+  11/23/2020 10:03:51			Withdrew from Savings						$16.0			$322.0
+
+   11/23/2020 10:05:33			Transferred from Checking Account 						$15.0			$656.64
+
+   11/23/2020 10:05:33			Transferred to Savings Account 						$15.0			$337.0
+
+   11/23/2020 10:05:39			Transferred from Checking Account 						$15.0			$641.64
+
+   11/23/2020 10:05:39			Transferred to Credit Account 						$15.0			$-381.67
+
+   11/23/2020 10:06:05			Paid an Individual						$20.0			$621.64
+
+   11/23/2020 10:06:06			Paid an Individual						$20.0			$317.0
+
+Checking Account (1048) Current Balance in Statement Period: 621.64
+Savings Account (2048) Current Balance in Statement Period: 317.0
+Credit Account (3048) Current Balance in Statement Period: -381.67
+
+

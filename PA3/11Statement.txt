@@ -1,0 +1,17 @@
+Bank of Miners 					 Date of Request: 11/02/2020 10:18:21
+Name: 	1 1
+Date of Birth: 	1
+Identification Number: 	104
+Address: 	1
+Phone Number: 	1
+Checking Account (1103) Balance Prior to Statement Period: 0.0
+Savings Account (2103) Balance Prior to Statement Period: 0.0
+Credit Account (3103) Balance Prior to Statement Period: 0.0
+
+
+  Date:					Action:								Amount:			Balance
+Checking Account (1103) Balance Currently: 1.0
+Savings Account (2103) Balance Currently: 1.0
+Credit Account (3103) Balance Currently: 1.0
+
+

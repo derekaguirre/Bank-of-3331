@@ -1,0 +1,8 @@
+Pinocchio Disney logged in. 
+
+Pinocchio Disney has paid $1.0 to Donald Duck
+Sender's Checking Account: (1029)
+Recipient's Checking Account: (1001)
+Pinocchio Disney now has 1712.08 from a balance of 1713.08
+Donald Duck now has 1689.89 from a balance of 1688.89
+

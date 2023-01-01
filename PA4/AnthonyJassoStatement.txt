@@ -1,0 +1,39 @@
+Bank of Disney Bank Statement 					 Date of Request: 11/09/2020 10:13:53
+Name: 	Anthony Jasso
+Date of Birth: 	"April 12, 1936"
+Identification Number: 	42
+Address: 	"500 W. University Ave, El Paso, TX 79968"
+Phone Number: 	(915) 747-5005
+Checking Account (1041) Balance Prior to Statement Period: 1565.16
+Savings Account (2041) Balance Prior to Statement Period: 2838.84
+Credit Account (3041) Balance Prior to Statement Period: -539.99
+
+
+  Date:					Action:										Amount:			Balance
+  11/09/2020 10:07:18			Deposited into Checking								$20.0			$1585.16
+
+  11/09/2020 10:07:20			Deposited into Savings								$20.0			$2858.84
+
+  11/09/2020 10:07:22			Deposited into Credit								$20.0			$-519.99
+
+   11/09/2020 10:07:48			Transferred from Checking Account 						$30.0			$1555.16
+
+   11/09/2020 10:07:48			Transferred to Savings Account 						$30.0			$2888.84
+
+   11/09/2020 10:07:50			Transferred from Checking Account 						$30.0			$1525.16
+
+   11/09/2020 10:07:50			Transferred to Credit Account 						$30.0			$-489.99
+
+   11/09/2020 10:08:12			Transferred from Checking Account 						$30.0			$1495.16
+
+   11/09/2020 10:08:12			Transferred to Savings Account 						$30.0			$2918.84
+
+   11/09/2020 10:08:25			Paid an Individual						$20.0			$1475.16
+
+   11/09/2020 10:08:26			Paid an Individual						$20.0			$2898.84
+
+Checking Account (1041) Current Balance in Statement Period: 1475.16
+Savings Account (2041) Current Balance in Statement Period: 2898.84
+Credit Account (3041) Current Balance in Statement Period: -489.99
+
+
