@@ -22,8 +22,7 @@ public class Checking {
     public Checking() {
     }
 
-    public Checking(String firstNameIn, String lastNameIn, int accountNumberIn, boolean checkingIn,
-            double startingBalanceIn) {
+    public Checking(String firstNameIn, String lastNameIn, int accountNumberIn, boolean checkingIn, double startingBalanceIn) {
         this.firstName = firstNameIn;
         this.lastName = lastNameIn;
         this.accountNumber = accountNumberIn;
@@ -31,8 +30,7 @@ public class Checking {
         this.startingBalance = startingBalanceIn;
     }
 
-    public Checking(String firstNameIn, String lastNameIn, int accountNumberIn, boolean checkingIn, boolean savingIn,
-            double startingBalanceIn, double interestRateIn) {
+    public Checking(String firstNameIn, String lastNameIn, int accountNumberIn, boolean checkingIn, boolean savingIn, double startingBalanceIn, double interestRateIn) {
         this.firstName = firstNameIn;
         this.lastName = lastNameIn;
         this.accountNumber = accountNumberIn;
@@ -160,8 +158,7 @@ public class Checking {
             throws IOException, FileNotFoundException {
         try {
             FileWriter fr = new FileWriter("Log.txt", true);
-            fr.write(firstName + " " + lastName + " with an initial balance of $" + initial + " deposited $"
-                    + moneyInput + " totaling $" + endAmount + "\n\n");
+            fr.write(firstName + " " + lastName + " with an initial balance of $" + initial + " deposited $" + moneyInput + " totaling $" + endAmount + "\n\n");
             fr.close();
         } catch (FileNotFoundException e) {
             System.out.print("The file is not found");
@@ -174,8 +171,7 @@ public class Checking {
             throws IOException, FileNotFoundException {
         try {
             FileWriter fr = new FileWriter("Log.txt", true);
-            fr.write(firstName + " " + lastName + " with an initial balance of $" + initial + " withdrew $"
-                    + withdrawFunds + " totaling $" + endAmount + "\n\n");
+            fr.write(firstName + " " + lastName + " with an initial balance of $" + initial + " withdrew $" + withdrawFunds + " totaling $" + endAmount + "\n\n");
             fr.close();
         } catch (FileNotFoundException e) {
             System.out.print("The file is not found");
@@ -189,12 +185,9 @@ public class Checking {
             double endAmountFirst, double endAmountSecond) throws IOException, FileNotFoundException {
         try {
             FileWriter fr = new FileWriter("Log.txt", true);
-            fr.write(firstNameFirst + " " + lastNameFirst + " has transferred $" + amountTransferred + " to "
-                    + firstNameSecond + " " + lastNameSecond + ".\n\n");
-            fr.write(firstNameFirst + " " + lastNameFirst + " now has " + endAmountFirst + " from a balance of "
-                    + initialAmountFirst + "\n\n");
-            fr.write(firstNameSecond + " " + lastNameSecond + " now has " + endAmountSecond + " from a balance of "
-                    + initialAmountSecond + "\n\n");
+            fr.write(firstNameFirst + " " + lastNameFirst + " has transferred $" + amountTransferred + " to " + firstNameSecond + " " + lastNameSecond + ".\n\n");
+            fr.write(firstNameFirst + " " + lastNameFirst + " now has " + endAmountFirst + " from a balance of " + initialAmountFirst + "\n\n");
+            fr.write(firstNameSecond + " " + lastNameSecond + " now has " + endAmountSecond + " from a balance of " + initialAmountSecond + "\n\n");
             fr.close();
         } catch (FileNotFoundException e) {
             System.out.print("The file is not found");
@@ -203,21 +196,15 @@ public class Checking {
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException, IOException, InputMismatchException,
-            SubtractionOverflowException, NegativeNumberException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, InputMismatchException, SubtractionOverflowException, NegativeNumberException {
         try {
             BufferedReader buffReader = new BufferedReader(new FileReader("CS 3331 - Bank Users.csv"));
             ArrayList<Checking> bank = new ArrayList<Checking>(); // Create an array list that will hold the information
             buffReader.readLine();
             String line;
-            while ((line = buffReader.readLine()) != null) { // Buffered reader will read the information from the file
-                                                             // line by line
-                String[] tokens = line.split(","); // The program will split the information up for every instance of a
-                                                   // comma
-                bank.add(new Checking(tokens[0], tokens[1], Integer.parseInt(tokens[2]), // The program will now save
-                                                                                         // the information in
-                                                                                         // accordance to their data
-                                                                                         // types
+            while ((line = buffReader.readLine()) != null) { // Buffered reader will read the information from the file line by line
+                String[] tokens = line.split(","); // The program will split the information up for every instance of a comma
+                bank.add(new Checking(tokens[0], tokens[1], Integer.parseInt(tokens[2]), // The program will now save the information in accordance to their data types
                         Boolean.parseBoolean(tokens[3]), Double.parseDouble(tokens[5])));
             }
             buffReader.close();
@@ -234,8 +221,7 @@ public class Checking {
                     System.out.println(" (1) \t Inquire Balance \n (2) \t Pay an Individual \n (3) \t Deposit cash \n (4) \t Withdraw cash \n (0) \t Exit\n");
 
                     int choice = sc.nextInt();
-                    while (choice < 5 && choice >= 0) { // As long as the user selects a choice belonging to the menu
-                                                        // the program will stay running
+                    while (choice < 5 && choice >= 0) { // As long as the user selects a choice belonging to the menu the program will stay running
                         switch (choice) {
                             case 0: // Will log the user out
                                 firstUser.logoutLog(firstUser.getFirstName(), firstUser.getLastName());
@@ -252,30 +238,20 @@ public class Checking {
                                 int recipientAccNum = sc.nextInt();
 
                                 Checking secondUser = new Checking();
-                                for (Checking whatever : bank) { // Verifies if the second user exists
-                                    if (recipientAccNum == whatever.getAccountNumber()
-                                            && recipientAccNum != firstUser.getAccountNumber())
-                                        secondUser = whatever;
+                                for (Checking iter : bank) { // Verifies if the second user exists
+                                    if (recipientAccNum == iter.getAccountNumber() && recipientAccNum != firstUser.getAccountNumber())
+                                        secondUser = iter;
                                 }
-                                if (recipientAccNum == secondUser.getAccountNumber()
-                                        && recipientAccNum != firstUser.getAccountNumber() && recipientAccNum > 0) { // User inputs a correct number
+                                if (recipientAccNum == secondUser.getAccountNumber() && recipientAccNum != firstUser.getAccountNumber() && recipientAccNum > 0) { // User inputs a correct number
 
-                                    System.out.println(
-                                            "How much would you like to send to " + secondUser.getAccountNumber() + ": " + secondUser.getFirstName() + " " + secondUser.getLastName());
+                                    System.out.println("How much would you like to send to " + secondUser.getAccountNumber() + ": " + secondUser.getFirstName() + " " + secondUser.getLastName());
                                     double sendingAmount = sc.nextDouble();
                                     double initialAmountFirst = firstUser.getStartingBalance(); // Saves the initial amount of money each person had before the transaction
                                     double initialAmountSecond = secondUser.getStartingBalance();
-                                    firstUser.setStartingBalance(
-                                            firstUser.withdrawFunction(firstUser.getStartingBalance(), sendingAmount)); // Updates the first person's account balance
-                                    secondUser.setStartingBalance(
-                                            secondUser.depositFunction(secondUser.getStartingBalance(), sendingAmount));// Updates the second person's account balance
-                                    System.out.println("\nSending funds of $" + sendingAmount + " to "
-                                            + secondUser.getAccountNumber() + ": " + secondUser.getFirstName() + " "
-                                            + secondUser.getLastName());
-                                    firstUser.transferLog(initialAmountFirst, initialAmountSecond,
-                                            firstUser.getFirstName(), firstUser.getLastName(),
-                                            secondUser.getFirstName(), secondUser.getLastName(), sendingAmount,
-                                            firstUser.getStartingBalance(), secondUser.getStartingBalance());
+                                    firstUser.setStartingBalance(firstUser.withdrawFunction(firstUser.getStartingBalance(), sendingAmount)); // Updates the first person's account balance
+                                    secondUser.setStartingBalance(secondUser.depositFunction(secondUser.getStartingBalance(), sendingAmount));// Updates the second person's account balance
+                                    System.out.println("\nSending funds of $" + sendingAmount + " to "+ secondUser.getAccountNumber() + ": " + secondUser.getFirstName() + " "+ secondUser.getLastName());
+                                    firstUser.transferLog(initialAmountFirst, initialAmountSecond,firstUser.getFirstName(), firstUser.getLastName(),secondUser.getFirstName(), secondUser.getLastName(), sendingAmount,firstUser.getStartingBalance(), secondUser.getStartingBalance());
                                     System.out.println("\nYou now have a total of $" + firstUser.getStartingBalance());
                                 } else if (recipientAccNum == firstUser.getAccountNumber()) { // If the user enters their own account number
                                     System.out.println("Please enter another person's account number.");
@@ -283,13 +259,11 @@ public class Checking {
                                 }
 
                                 else { // If the user enters in an account number that does not exist
-                                    System.out
-                                            .println("The provided account number does not exist. Please try again.\n");
+                                    System.out.println("The provided account number does not exist. Please try again.\n");
                                     break;
                                 }
 
-                                System.out.println(
-                                        "\n (1) \t Inquire Balance \n (2) \t Pay an Individual \n (3) \t Deposit cash \n (4) \t Withdraw cash \n (0) \t Exit\n");
+                                System.out.println("\n (1) \t Inquire Balance \n (2) \t Pay an Individual \n (3) \t Deposit cash \n (4) \t Withdraw cash \n (0) \t Exit\n");
                                 choice = sc.nextInt();
                                 break;
 
@@ -299,10 +273,8 @@ public class Checking {
                                 double depositAmount = sc.nextDouble();
                                 System.out.println("\nDepositing $" + depositAmount);
                                 double initialBalance = firstUser.getStartingBalance(); // Saves user's initial balance before the transaction
-                                firstUser.setStartingBalance(
-                                        firstUser.depositFunction(firstUser.getStartingBalance(), depositAmount));// Updates the user's balance
-                                firstUser.depositLog(initialBalance, firstUser.getFirstName(), firstUser.getLastName(),
-                                        depositAmount, firstUser.getStartingBalance());
+                                firstUser.setStartingBalance(firstUser.depositFunction(firstUser.getStartingBalance(), depositAmount));// Updates the user's balance
+                                firstUser.depositLog(initialBalance, firstUser.getFirstName(), firstUser.getLastName(),depositAmount, firstUser.getStartingBalance());
                                 System.out.println("You now have a total of " + firstUser.getStartingBalance());
                                 System.out.println(" (1) \t Inquire Balance \n (2) \t Pay an Individual \n (3) \t Deposit cash \n (4) \t Withdraw cash \n (0) \t Exit\n");
                                 choice = sc.nextInt();

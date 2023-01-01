@@ -1,2 +1,16 @@
-Mickey Mouse has logged in. 
+Donald Duck has logged in. 
+
+Donald Duck has requested to see their balance of $1613.96
+
+Donald Duck has transferred $500.0 to Simba Disney.
+
+Donald Duck now has 1113.96 from a balance of 1613.96
+
+Simba Disney now has 797.38 from a balance of 297.38
+
+Donald Duck with an initial balance of $1113.96 deposited $500.0 totaling $1613.96
+
+Donald Duck with an initial balance of $1613.96 withdrew $200.0 totaling $1413.96
+
+Donald Duck has logged out. 
 
